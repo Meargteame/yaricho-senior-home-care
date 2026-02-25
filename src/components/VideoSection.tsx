@@ -5,19 +5,17 @@ import { Play, ShieldCheck, Heart, Coffee, Users, Home, Clock, Sparkles, UserChe
 import { useState, useRef } from 'react';
 
 const leftFeatures = [
-    { id: 1, title: 'Private & Shared Rooms', icon: Home },
-    { id: 2, title: 'All-Inclusive Luxury Rates', icon: Sparkles },
-    { id: 3, title: '24/7 Professional Staff', icon: Clock },
-    { id: 4, title: 'Medication Oversight', icon: ShieldCheck },
-    { id: 5, title: 'Daily Social Activities', icon: Users },
+    { id: 1, title: '24/7 High-Quality Care', icon: Heart },
+    { id: 2, title: 'Home Cooked Nutritious Meals', icon: Coffee },
+    { id: 3, title: 'Medication Management', icon: ShieldCheck },
+    { id: 4, title: 'Hygiene & Grooming Support', icon: UserCheck },
 ];
 
 const rightFeatures = [
-    { id: 6, title: 'Open Door Family Policy', icon: Heart },
-    { id: 7, title: 'Gourmet Home-Cooked Meals', icon: Coffee },
-    { id: 8, title: 'Non-Smoking Residence', icon: ShieldCheck },
-    { id: 9, title: 'Personal Laundry Service', icon: Sparkles },
-    { id: 10, title: 'Companionship & Assistance', icon: UserCheck },
+    { id: 5, title: 'Housekeeping & Laundry', icon: Sparkles },
+    { id: 6, title: 'Private Luxury Rooms', icon: Home },
+    { id: 7, title: 'Daily Engaging Activities', icon: Users },
+    { id: 8, title: 'Compassionate Staff', icon: Heart },
 ];
 
 export default function VideoSection() {
@@ -47,7 +45,7 @@ export default function VideoSection() {
                         Virtual Experience
                     </motion.span>
                     <h2 className="font-serif text-4xl md:text-5xl lg:text-7xl text-[#1B365D] font-bold">
-                        Life at <span className="italic font-normal text-[#0284C7]">Heavenly Manor</span>
+                        Life at <span className="italic font-normal text-[#0284C7]">Heavenly Manor of Plano</span>
                     </h2>
                 </div>
 

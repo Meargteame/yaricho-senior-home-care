@@ -2303,6 +2303,12 @@
   }
 
   @media (hover: hover) {
+    .hover\:underline:hover {
+      text-decoration-line: underline;
+    }
+  }
+
+  @media (hover: hover) {
     .hover\:shadow-\[0_25px_60px_rgba\(2\,132\,199\,0\.5\)\]:hover {
       --tw-shadow: 0 25px 60px var(--tw-shadow-color, #0284c780);
       box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);

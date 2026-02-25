@@ -84,8 +84,9 @@ export default function Footer() {
               </div>
             </div>
             <a
-              href="https://maps.google.com"
+              href="https://www.google.com/maps/search/?api=1&query=2108+Winona+Dr+Plano+TX+75074"
               target="_blank"
+              rel="noopener noreferrer"
               className="inline-block text-white/50 hover:text-[#7DD3FC] transition-colors border-b border-white/20 pb-1 text-sm tracking-widest uppercase font-bold"
             >
               Get Directions

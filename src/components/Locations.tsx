@@ -16,18 +16,6 @@ const locations = [
       '/images/slider/3506b2579b09ebc08a5728b8b3038fd9-cc_ft_768.webp',
       '/images/slider/38a88f7d9c801445789f325e47e8cb37-cc_ft_768.webp',
     ]
-  },
-  {
-    id: 'west',
-    name: 'West Side Manor',
-    address: 'Coming Soon to West Plano',
-    features: ['Modern Architecture', 'Hydrotherapy Suite', 'Spacious Social Pavilions'],
-    description: "Setting a new benchmark for luxury senior living with state-of-the-art facilities and unmatched compassioniate care.",
-    images: [
-      '/images/slider/9551cb39d73de8a0aeb840052aec75e7-cc_ft_768.webp',
-      '/images/slider/5e95dc08f5039b7ae28f2725e206c54b-cc_ft_768.webp',
-      '/images/slider/7f9de6e4adb0b6b47b551faf9ce97fba-cc_ft_384.webp',
-    ]
   }
 ];
 
@@ -103,10 +91,15 @@ export default function Locations() {
 
               <div className="w-full lg:w-1/2 space-y-10">
                 <div className="space-y-4">
-                  <div className="inline-flex items-center gap-2 text-[#0284C7] font-bold text-sm tracking-widest uppercase">
+                  <a
+                    href="https://www.google.com/maps/search/?api=1&query=2108+Winona+Dr+Plano+TX+75074"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-[#0284C7] font-bold text-sm tracking-widest uppercase hover:underline"
+                  >
                     <MapPin className="w-5 h-5" />
                     <span>{location.address}</span>
-                  </div>
+                  </a>
                   <h3 className="font-serif text-4xl md:text-5xl text-[#1B365D] font-bold leading-tight">
                     {location.name}
                   </h3>
@@ -129,7 +122,10 @@ export default function Locations() {
 
                 <div className="pt-6">
                   <a
-                    href="#contact"
+                    href="https://www.google.com/maps/search/?api=1&query=2108+Winona+Dr+Plano+TX+75074"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="View Location on Google Maps"
                     className="group inline-flex items-center gap-3 bg-[#1B365D] hover:bg-[#0284C7] text-white px-8 py-4 rounded-full font-bold tracking-widest uppercase transition-all duration-500 shadow-xl"
                   >
                     View Availability

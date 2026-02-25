@@ -81,7 +81,7 @@ export default function Gallery() {
                             opacity: { duration: 0.2 }
                         }}
                         className="absolute inset-0 w-full h-full object-cover"
-                        alt={`Manor View ${currentIndex + 1}`}
+                        alt={`Heavenly Manor of Plano - luxury senior home care view ${currentIndex + 1}`}
                     />
                 </AnimatePresence>
 

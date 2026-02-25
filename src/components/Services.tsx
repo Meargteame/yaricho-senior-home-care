@@ -1,28 +1,43 @@
 'use client';
 
 import { motion } from 'motion/react';
-import { Heart, Utensils, Calendar, ShieldCheck, Stethoscope, Clock } from 'lucide-react';
+import { Heart, Utensils, Calendar, ShieldCheck, Stethoscope, Clock, Sparkles, UserCheck, Home } from 'lucide-react';
 
 const services = [
   {
     icon: Stethoscope,
-    title: "24/7 Professional Care",
-    description: "Round-the-clock clinical monitoring and assistance provided by a dedicated team of licensed professionals."
+    title: "24/7 High-Quality Care",
+    description: "Round-the-clock professional medical monitoring and compassionate assistance for your loved ones."
   },
   {
     icon: Utensils,
-    title: "Personalized Meal Plans",
-    description: "Gourmet, nutrition-focused dining tailored to individual dietary needs and culinary preferences."
-  },
-  {
-    icon: Calendar,
-    title: "Daily Enrichment",
-    description: "A curate schedule of social, physical, and cognitive activities designed to inspire joy and connection."
+    title: "Home Cooked Meals",
+    description: "Delicious, nutritious, and home-cooked meals tailored to individual dietary needs and preferences."
   },
   {
     icon: ShieldCheck,
     title: "Medication Management",
-    description: "Strict, professional oversight of pharmaceutical needs to ensure safety, accuracy, and optimal health."
+    description: "Professional oversight and administration of medications to ensure safety and optimal health."
+  },
+  {
+    icon: UserCheck,
+    title: "Hygiene Assistant",
+    description: "Dedicated support for personal hygiene and daily grooming with dignity and respect."
+  },
+  {
+    icon: Sparkles,
+    title: "Housekeeping & Laundry",
+    description: "Full-service laundry and daily housekeeping to maintain a clean, comfortable, and stress-free environment."
+  },
+  {
+    icon: Home,
+    title: "Private Rooms",
+    description: "Comfortable, personal living spaces designed to feel like home while providing maximum peace and privacy."
+  },
+  {
+    icon: Calendar,
+    title: "Daily Activities",
+    description: "A wide range of engaging social and recreational activities to promote mental and physical well-on."
   }
 ];
 
@@ -50,7 +65,7 @@ export default function Services() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <motion.div
               key={index}
