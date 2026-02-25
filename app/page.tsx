@@ -1,5 +1,6 @@
 import Navbar from '../src/components/Navbar';
 import Hero from '../src/components/Hero';
+import VideoSection from '../src/components/VideoSection';
 import Services from '../src/components/Services';
 import Gallery from '../src/components/Gallery';
 import Locations from '../src/components/Locations';
@@ -11,6 +12,7 @@ export default function Home() {
             <Navbar />
             <main>
                 <Hero />
+                <VideoSection />
                 <Services />
                 <Gallery />
                 <Locations />

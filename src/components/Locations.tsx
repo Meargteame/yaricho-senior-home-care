@@ -7,14 +7,14 @@ import { MapPin, CheckCircle, ArrowRight } from 'lucide-react';
 const locations = [
   {
     id: 'east',
-    name: 'East Side Estate',
+    name: 'Heavenly Manor',
     address: '2108 Winona Dr, Plano, TX 75074',
     features: ['Manicured Gardens', 'Private Luxury Suites', 'Serene Neighborhood'],
     description: "A sanctuary of clinical excellence and residential grace, offering a personalized experience in the heart of Plano.",
     images: [
-      'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?q=80&w=2070&auto=format&fit=crop',
-      'https://images.unsplash.com/photo-1484154218962-a1c002085d2f?q=80&w=2070&auto=format&fit=crop',
-      'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=2070&auto=format&fit=crop',
+      '/images/slider/402fcbdd4ae6c6e0d64238aacefff69b-cc_ft_768.webp',
+      '/images/slider/3506b2579b09ebc08a5728b8b3038fd9-cc_ft_768.webp',
+      '/images/slider/38a88f7d9c801445789f325e47e8cb37-cc_ft_768.webp',
     ]
   },
   {
@@ -24,9 +24,9 @@ const locations = [
     features: ['Modern Architecture', 'Hydrotherapy Suite', 'Spacious Social Pavilions'],
     description: "Setting a new benchmark for luxury senior living with state-of-the-art facilities and unmatched compassioniate care.",
     images: [
-      'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070&auto=format&fit=crop',
-      'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2053&auto=format&fit=crop',
-      'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=2070&auto=format&fit=crop',
+      '/images/slider/9551cb39d73de8a0aeb840052aec75e7-cc_ft_768.webp',
+      '/images/slider/5e95dc08f5039b7ae28f2725e206c54b-cc_ft_768.webp',
+      '/images/slider/7f9de6e4adb0b6b47b551faf9ce97fba-cc_ft_384.webp',
     ]
   }
 ];

@@ -2,8 +2,8 @@ import './globals.css';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Yaricho Senior Home Care | Luxury Senior Living in Plano',
-    description: 'Dignity, Comfort, and Compassionate Care. Premium senior living facility in Plano, Texas.',
+    title: 'Heavenly Manor of Plano | Yaricho Senior Home Care',
+    description: 'Boutique Luxury Senior Living in Plano, Texas. Honored to provide compassionate, safe, and high-quality care.',
 };
 
 export default function RootLayout({

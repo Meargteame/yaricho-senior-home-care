@@ -5,12 +5,12 @@ import { motion, AnimatePresence } from 'motion/react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const images = [
-    '/images/70579f9e4a54b992f2d0b4aaccc014a7l-m1527110513rd-w1280_h960.webp',
-    '/images/70579f9e4a54b992f2d0b4aaccc014a7l-m2129651156rd-w1280_h960.webp',
-    '/images/70579f9e4a54b992f2d0b4aaccc014a7l-m3102320626rd-w1280_h960.webp',
-    '/images/70579f9e4a54b992f2d0b4aaccc014a7l-m4089297241rd-w1280_h960.webp',
-    '/images/70579f9e4a54b992f2d0b4aaccc014a7l-m945237833rd-w1280_h960.webp',
-    '/images/70579f9e4a54b992f2d0b4aaccc014a7l-m1940455411rd-w1280_h960.webp',
+    '/images/slider/402fcbdd4ae6c6e0d64238aacefff69b-cc_ft_768.webp',
+    '/images/slider/3506b2579b09ebc08a5728b8b3038fd9-cc_ft_768.webp',
+    '/images/slider/38a88f7d9c801445789f325e47e8cb37-cc_ft_768.webp',
+    '/images/slider/9551cb39d73de8a0aeb840052aec75e7-cc_ft_768.webp',
+    '/images/slider/5e95dc08f5039b7ae28f2725e206c54b-cc_ft_768.webp',
+    '/images/slider/7f9de6e4adb0b6b47b551faf9ce97fba-cc_ft_384.webp',
 ];
 
 export default function Gallery() {
