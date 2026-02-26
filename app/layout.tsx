@@ -3,25 +3,45 @@ import type { Metadata } from 'next';
 import StructuredData from '../src/components/StructuredData';
 
 export const metadata: Metadata = {
-    title: 'Heavenly Manor of Plano | Yaricho Senior Home Care',
-    description: 'Boutique Luxury Senior Living in Plano, Texas. Honored to provide compassionate, safe, and high-quality care for your loved ones with 24/7 support.',
-    keywords: ['Senior Home Care Plano', 'Luxury Senior Living Texas', 'Assisted Living Plano TX', 'Elderly Care Plano', 'Heavenly Manor Plano', 'Yaricho Senior Home Care'],
-    authors: [{ name: 'Yaricho Senior Home Care' }],
+    metadataBase: new URL('https://yarichoseniorhomecare.com'), // Fixes relative URL issues
+    title: {
+        template: '%s | Yaricho Senior Home Care',
+        default: 'Heavenly Manor of Plano | Yaricho Senior Home Care in Plano, TX',
+    },
+    description: 'Premier Boutique Senior Living in Plano, Texas. Providing compassionate, 24/7 assisting living care, medication management, and a safe, home-like environment.',
+    keywords: [
+        'Senior Home Care Plano', 
+        'Luxury Senior Living Texas', 
+        'Assisted Living Plano TX', 
+        'Elderly Care Plano', 
+        'Memory Care Plano',
+        'Private Senior Rooms',
+        'Respite Care Plano',
+        'Yaricho Senior Home Care'
+    ],
+    authors: [{ name: 'Yaricho Senior Home Care', url: 'https://yarichoseniorhomecare.com' }],
+    creator: 'Yaricho Senior Home Care',
+    publisher: 'Yaricho Senior Home Care',
+    formatDetection: {
+        email: false,
+        address: false,
+        telephone: false,
+    },
     openGraph: {
         title: 'Heavenly Manor of Plano | Yaricho Senior Home Care',
-        description: 'Boutique Luxury Senior Living in Plano, Texas. Compassionate, safe, and high-quality care.',
+        description: 'Boutique Luxury Senior Living in Plano, Texas. Compassionate, safe, and high-quality care with 24/7 staff support.',
         url: 'https://yarichoseniorhomecare.com',
         siteName: 'Yaricho Senior Home Care',
+        locale: 'en_US',
+        type: 'website',
         images: [
             {
                 url: '/images/slider/402fcbdd4ae6c6e0d64238aacefff69b-cc_ft_768.webp',
                 width: 1200,
                 height: 630,
-                alt: 'Heavenly Manor of Plano',
+                alt: 'Heavenly Manor - Luxury Senior Living',
             },
         ],
-        locale: 'en_US',
-        type: 'website',
     },
     twitter: {
         card: 'summary_large_image',
@@ -32,9 +52,19 @@ export const metadata: Metadata = {
     robots: {
         index: true,
         follow: true,
+        googleBot: {
+            index: true,
+            follow: true,
+            'max-video-preview': -1,
+            'max-image-preview': 'large',
+            'max-snippet': -1,
+        },
     },
     alternates: {
         canonical: 'https://yarichoseniorhomecare.com',
+    },
+    icons: {
+        icon: '/favicon.ico', // Ensure you have a favicon
     },
 };
 
@@ -47,6 +77,7 @@ export default function RootLayout({
         <html lang="en" className="scroll-smooth">
             <head>
                 <StructuredData />
+                <link rel="icon" href="/favicon.ico" sizes="any" />
             </head>
             <body>{children}</body>
         </html>
