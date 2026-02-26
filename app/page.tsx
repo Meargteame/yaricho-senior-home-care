@@ -1,10 +1,20 @@
+'use client';
+
+import dynamic from 'next/dynamic';
 import Navbar from '../src/components/Navbar';
 import Hero from '../src/components/Hero';
 import VideoSection from '../src/components/VideoSection';
 import Services from '../src/components/Services';
-import Gallery from '../src/components/Gallery';
-import Locations from '../src/components/Locations';
 import Footer from '../src/components/Footer';
+
+// Lazy load heavy components
+const Gallery = dynamic(() => import('../src/components/Gallery'), { 
+  loading: () => <div className="h-[600px] bg-gray-100 animate-pulse" /> 
+});
+const Locations = dynamic(() => import('../src/components/Locations'), {
+  loading: () => <div className="h-[400px] bg-gray-100 animate-pulse" />
+});
+const Testimonials = dynamic(() => import('../src/components/Testimonials'));
 
 export default function Home() {
     return (
@@ -15,6 +25,7 @@ export default function Home() {
                 <VideoSection />
                 <Services />
                 <Gallery />
+                <Testimonials />
                 <Locations />
             </main>
             <Footer />

@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 import { motion, AnimatePresence } from 'motion/react';
 import { ArrowRight, Play, Sun, Heart, ShieldCheck, Star } from 'lucide-react';
 
@@ -35,15 +36,23 @@ export default function Hero() {
             transition={{ duration: 1.5, ease: "easeInOut" }}
             className="absolute inset-0 w-full h-full"
           >
-            <motion.img
-              src={sliderImages[currentSlide]}
-              alt="Luxury Manor Background"
-              initial={{ scale: 1 }}
-              animate={{ scale: 1.04 }}
-              transition={{ duration: 6, ease: "linear" }}
-              className="w-full h-full object-cover brightness-[0.7] contrast-[1.1] saturate-[0.8]"
-              style={{ imageRendering: 'auto' }}
-            />
+            <div className="relative w-full h-full"> 
+               <motion.div 
+                 className="absolute inset-0 w-full h-full"
+                 initial={{ scale: 1 }}
+                 animate={{ scale: 1.04 }}
+                 transition={{ duration: 6, ease: "linear" }}
+               >
+                 <Image
+                   src={sliderImages[currentSlide]}
+                   alt="Luxury Manor Background"
+                   fill
+                   priority={true}
+                   className="object-cover brightness-[0.7] contrast-[1.1] saturate-[0.8]"
+                   sizes="100vw"
+                 />
+               </motion.div>
+            </div>
           </motion.div>
         </AnimatePresence>
 

@@ -1,6 +1,20 @@
 import './globals.css';
 import type { Metadata } from 'next';
+import { Montserrat, Playfair_Display } from 'next/font/google';
 import StructuredData from '../src/components/StructuredData';
+import FloatingCTA from '../src/components/FloatingCTA';
+
+const montserrat = Montserrat({
+    subsets: ['latin'],
+    variable: '--font-montserrat',
+    display: 'swap',
+});
+
+const playfair = Playfair_Display({
+    subsets: ['latin'],
+    variable: '--font-playfair',
+    display: 'swap',
+});
 
 export const metadata: Metadata = {
     metadataBase: new URL('https://yarichoseniorhomecare.com'), // Fixes relative URL issues
@@ -74,12 +88,15 @@ export default function RootLayout({
     children: React.ReactNode;
 }) {
     return (
-        <html lang="en" className="scroll-smooth">
+        <html lang="en" className={`scroll-smooth ${montserrat.variable} ${playfair.variable}`}>
             <head>
                 <StructuredData />
                 <link rel="icon" href="/favicon.ico" sizes="any" />
             </head>
-            <body>{children}</body>
+            <body className="font-sans antialiased text-[#1B365D]">
+                {children}
+                <FloatingCTA />
+            </body>
         </html>
     );
 }

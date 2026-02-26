@@ -19,6 +19,8 @@ const locations = [
   }
 ];
 
+import Image from 'next/image';
+
 function ImageSlider({ images }: { images: string[] }) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -31,17 +33,23 @@ function ImageSlider({ images }: { images: string[] }) {
 
   return (
     <div className="relative w-full h-[450px] overflow-hidden rounded-[2.5rem] shadow-2xl group bg-gray-200 border-8 border-white">
-      <AnimatePresence initial={false}>
-        <motion.img
+      <AnimatePresence mode="popLayout">
+        <motion.div
           key={currentIndex}
-          src={images[currentIndex]}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 1, ease: "easeInOut" }}
-          className="absolute inset-0 w-full h-full object-cover"
-          alt="Location view"
-        />
+          className="absolute inset-0 w-full h-full"
+        >
+           <Image
+            src={images[currentIndex]}
+            alt="Luxury Senior Home Location"
+            fill
+            className="object-cover"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 800px"
+          />
+        </motion.div>
       </AnimatePresence>
 
       <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-black/40 to-transparent" />

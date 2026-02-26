@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 import { motion, AnimatePresence } from 'motion/react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
@@ -68,9 +69,8 @@ export default function Gallery() {
 
             <div className="relative w-full max-w-7xl mx-auto h-[400px] md:h-[650px] overflow-hidden rounded-[2.5rem] shadow-2xl border-8 border-white bg-gray-200 group">
                 <AnimatePresence initial={false} custom={direction}>
-                    <motion.img
+                    <motion.div
                         key={currentIndex}
-                        src={images[currentIndex]}
                         custom={direction}
                         variants={slideVariants}
                         initial="enter"
@@ -80,9 +80,17 @@ export default function Gallery() {
                             x: { type: "spring", stiffness: 300, damping: 30 },
                             opacity: { duration: 0.2 }
                         }}
-                        className="absolute inset-0 w-full h-full object-cover"
-                        alt={`Heavenly Manor of Plano - luxury senior home care view ${currentIndex + 1}`}
-                    />
+                        className="absolute inset-0 w-full h-full"
+                    >
+                         <Image
+                            src={images[currentIndex]}
+                            alt={`Heavenly Manor of Plano - luxury senior home care view ${currentIndex + 1}`}
+                            fill
+                            className="object-cover"
+                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 1200px"
+                            priority={currentIndex === 0}
+                        />
+                    </motion.div>
                 </AnimatePresence>
 
                 {/* Gradient Overlay */}
