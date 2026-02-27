@@ -6,11 +6,11 @@ import { motion, AnimatePresence } from 'motion/react';
 import { ArrowRight, Play, Sun, Heart, ShieldCheck, Star } from 'lucide-react';
 
 const sliderImages = [
+  '/images/new/Gemini_Generated_Image_13t2xf13t2xf13t2.png',
+  '/images/new/Gemini_Generated_Image_21x0sn21x0sn21x0.png',
   '/images/slider/3506b2579b09ebc08a5728b8b3038fd9-cc_ft_768.webp',
   '/images/slider/402fcbdd4ae6c6e0d64238aacefff69b-cc_ft_768.webp',
   '/images/slider/5e95dc08f5039b7ae28f2725e206c54b-cc_ft_768.webp',
-  '/images/slider/9551cb39d73de8a0aeb840052aec75e7-cc_ft_768.webp',
-  '/images/slider/38a88f7d9c801445789f325e47e8cb37-cc_ft_768.webp',
 ];
 
 export default function Hero() {
