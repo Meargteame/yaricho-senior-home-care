@@ -6,12 +6,11 @@ import { motion, AnimatePresence } from 'motion/react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const images = [
-    '/images/slider/402fcbdd4ae6c6e0d64238aacefff69b-cc_ft_768.webp',
-    '/images/slider/3506b2579b09ebc08a5728b8b3038fd9-cc_ft_768.webp',
-    '/images/slider/38a88f7d9c801445789f325e47e8cb37-cc_ft_768.webp',
-    '/images/slider/9551cb39d73de8a0aeb840052aec75e7-cc_ft_768.webp',
-    '/images/slider/5e95dc08f5039b7ae28f2725e206c54b-cc_ft_768.webp',
-    '/images/slider/7f9de6e4adb0b6b47b551faf9ce97fba-cc_ft_384.webp',
+    '/images/new/Gemini_Generated_Image_brhxribrhxribrhx.png',
+    '/images/new/Gemini_Generated_Image_dngjacdngjacdngj.png',
+    '/images/new/Gemini_Generated_Image_dsalbedsalbedsal.png',
+    '/images/new/Gemini_Generated_Image_gscojdgscojdgsco.png',
+    '/images/new/Gemini_Generated_Image_ik3nkdik3nkdik3n.png',
 ];
 
 export default function Gallery() {
@@ -67,7 +66,7 @@ export default function Gallery() {
                 </h2>
             </div>
 
-            <div className="relative w-full max-w-7xl mx-auto h-[400px] md:h-[650px] overflow-hidden rounded-[2.5rem] shadow-2xl border-8 border-white bg-gray-200 group">
+            <div className="relative w-full max-w-7xl mx-auto h-[600px] md:h-[800px] overflow-hidden rounded-[1.5rem] shadow-xl border-4 border-white bg-gray-200 group">
                 <AnimatePresence initial={false} custom={direction}>
                     <motion.div
                         key={currentIndex}

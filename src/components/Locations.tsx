@@ -12,9 +12,9 @@ const locations = [
     features: ['Manicured Gardens', 'Private Luxury Suites', 'Serene Neighborhood'],
     description: "A sanctuary of clinical excellence and residential grace, offering a personalized experience in the heart of Plano.",
     images: [
-      '/images/slider/402fcbdd4ae6c6e0d64238aacefff69b-cc_ft_768.webp',
-      '/images/slider/3506b2579b09ebc08a5728b8b3038fd9-cc_ft_768.webp',
-      '/images/slider/38a88f7d9c801445789f325e47e8cb37-cc_ft_768.webp',
+      '/images/new/Gemini_Generated_Image_mc6vo2mc6vo2mc6v.png',
+      '/images/new/Gemini_Generated_Image_ulmopkulmopkulmo.png',
+      '/images/new/Gemini_Generated_Image_wt4tqhwt4tqhwt4t.png',
     ]
   }
 ];
@@ -32,7 +32,7 @@ function ImageSlider({ images }: { images: string[] }) {
   }, [images.length]);
 
   return (
-    <div className="relative w-full h-[450px] overflow-hidden rounded-[2.5rem] shadow-2xl group bg-gray-200 border-8 border-white">
+    <div className="relative w-full h-[600px] overflow-hidden rounded-[1rem] shadow-xl group bg-gray-200 border-4 border-white">
       <AnimatePresence mode="popLayout">
         <motion.div
           key={currentIndex}
@@ -47,7 +47,7 @@ function ImageSlider({ images }: { images: string[] }) {
             alt="Luxury Senior Home Location"
             fill
             className="object-cover"
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 800px"
+            sizes="100vw"
           />
         </motion.div>
       </AnimatePresence>
@@ -83,7 +83,7 @@ export default function Locations() {
           <h2 className="font-serif text-4xl md:text-6xl text-[#1B365D] font-bold">Premier Destinations</h2>
         </div>
 
-        <div className="space-y-32">
+        <div className="space-y-24">
           {locations.map((location, index) => (
             <motion.div
               key={location.id}
@@ -91,13 +91,13 @@ export default function Locations() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
               viewport={{ once: true, margin: "-100px" }}
-              className={`flex flex-col ${index % 2 === 1 ? 'lg:flex-row-reverse' : 'lg:flex-row'} gap-16 items-center`}
+              className="flex flex-col gap-12"
             >
-              <div className="w-full lg:w-1/2">
+              <div className="w-full">
                 <ImageSlider images={location.images} />
               </div>
 
-              <div className="w-full lg:w-1/2 space-y-10">
+              <div className="w-full max-w-4xl mx-auto space-y-8 text-center px-4">
                 <div className="space-y-4">
                   <a
                     href="https://www.google.com/maps/search/?api=1&query=2108+Winona+Dr+Plano+TX+75074"
