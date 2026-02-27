@@ -6,11 +6,11 @@ import { motion, AnimatePresence } from 'motion/react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const images = [
-    '/images/new/Gemini_Generated_Image_brhxribrhxribrhx.png',
-    '/images/new/Gemini_Generated_Image_dngjacdngjacdngj.png',
-    '/images/new/Gemini_Generated_Image_dsalbedsalbedsal.png',
-    '/images/new/Gemini_Generated_Image_gscojdgscojdgsco.png',
-    '/images/new/Gemini_Generated_Image_ik3nkdik3nkdik3n.png',
+    '/images/slider/192036c7c1bfd5e3b7931d7d8e0b7ef3-cc_ft_384.webp',
+    '/images/slider/22f376111d74820d09863253b680c323-cc_ft_384.webp',
+    '/images/slider/5186052074c929ccb64225f6bcb07833-cc_ft_384.webp',
+    '/images/slider/7f9de6e4adb0b6b47b551faf9ce97fba-cc_ft_384.webp',
+    '/images/slider/ada148ddec0ca5de3b45e1d5c550669a-cc_ft_384.webp',
 ];
 
 export default function Gallery() {
@@ -62,7 +62,7 @@ export default function Gallery() {
                     Visual Experience
                 </motion.span>
                 <h2 className="font-serif text-4xl md:text-6xl text-[#1B365D] font-bold">
-                    Our <span className="italic font-normal text-[#0284C7]">Heavenly</span> Manor
+                    Experience <span className="italic font-normal text-[#0284C7]">Yaricho Senior Home Care</span>
                 </h2>
             </div>
 
@@ -83,7 +83,7 @@ export default function Gallery() {
                     >
                          <Image
                             src={images[currentIndex]}
-                            alt={`Heavenly Manor of Plano - luxury senior home care view ${currentIndex + 1}`}
+                            alt={`Yaricho Senior Home Care of Plano - luxury senior home care view ${currentIndex + 1}`}
                             fill
                             className="object-cover"
                             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 1200px"

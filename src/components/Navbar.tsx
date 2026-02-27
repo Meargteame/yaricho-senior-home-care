@@ -25,10 +25,7 @@ export default function Navbar() {
             </div>
             <div className="flex flex-col">
               <span className="font-serif text-2xl font-bold tracking-tight leading-none text-[#1B365D]">
-                Yaricho
-              </span>
-              <span className="text-[10px] uppercase tracking-[0.3em] font-medium text-gray-500">
-                Senior Home Care
+                Yaricho Senior Home Care
               </span>
             </div>
           </a>

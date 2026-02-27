@@ -61,7 +61,7 @@ export default function Services() {
             </h2>
           </div>
           <p className="text-gray-600 text-lg max-w-md leading-relaxed">
-            We redefine the standard of senior living with a focus on dignity, personalization, and the highest medical standards in a serene manor.
+            We redefine the standard of senior living with a focus on dignity, personalization, and the highest medical standards in a serene environment.
           </p>
         </div>
 

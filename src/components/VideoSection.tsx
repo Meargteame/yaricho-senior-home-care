@@ -45,7 +45,7 @@ export default function VideoSection() {
                         Virtual Experience
                     </motion.span>
                     <h2 className="font-serif text-4xl md:text-5xl lg:text-7xl text-[#1B365D] font-bold">
-                        Life at <span className="italic font-normal text-[#0284C7]">Heavenly Manor of Plano</span>
+                        Life at <span className="italic font-normal text-[#0284C7]">Yaricho Senior Home Care</span>
                     </h2>
                 </div>
 

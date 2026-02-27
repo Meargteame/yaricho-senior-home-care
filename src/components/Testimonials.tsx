@@ -8,7 +8,7 @@ const testimonials = [
   {
     name: "Sarah Jenkins",
     role: "Daughter of Resident",
-    text: "The care at Yaricho is simply unmatched. My mother has never been happier, and the staff treats her like their own family. The facility is beautiful, but it's the people that make it a home.",
+    text: "The care at Yaricho Senior Home Care is simply unmatched. My mother has never been happier, and the staff treats her like their own family. The facility is beautiful, but it's the people that make it a home.",
     stars: 5,
   },
   {
@@ -20,7 +20,7 @@ const testimonials = [
   {
     name: "Emily Rodriguez",
     role: "Niece of Resident",
-    text: "Reviewing many places in Plano, Heavenly Manor stood out immediately. It doesn't feel like a facility; it feels like a luxury boutique hotel with clinical excellence.",
+    text: "Reviewing many places in Plano, Yaricho Senior Home Care stood out immediately. It doesn't feel like a facility; it feels like a luxury boutique hotel with clinical excellence.",
     stars: 5,
   }
 ];

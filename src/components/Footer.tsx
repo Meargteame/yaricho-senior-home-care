@@ -104,7 +104,7 @@ export default function Footer() {
                     <div className="w-12 h-12 bg-[#1B365D] rounded-full flex items-center justify-center text-white font-serif text-2xl font-bold mx-auto mb-2">
                         Y
                     </div>
-                    <span className="font-serif text-lg font-bold block text-[#1B365D]">Yaricho</span>
+                    <span className="font-serif text-lg font-bold block text-[#1B365D]">Yaricho Senior <br/> Home Care</span>
                  </div>
             </div>
 

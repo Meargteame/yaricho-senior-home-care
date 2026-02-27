@@ -2,7 +2,7 @@ export default function StructuredData() {
     const jsonLd = {
         "@context": "https://schema.org",
         "@type": "AssistedLivingFacility",
-        "name": "Heavenly Manor of Plano - Yaricho Senior Home Care",
+        "name": "Yaricho Senior Home Care",
         "alternateName": "Yaricho Senior Home Care",
         "image": "https://yarichoseniorhomecare.com/images/slider/402fcbdd4ae6c6e0d64238aacefff69b-cc_ft_768.webp",
         "url": "https://yarichoseniorhomecare.com",
