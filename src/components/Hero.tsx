@@ -7,10 +7,10 @@ import { ArrowRight, Play, Sun, Heart, ShieldCheck, Star } from 'lucide-react';
 
 const sliderImages = [
   '/images/another/photo_16_2026-03-01_02-14-40.jpg',
-  '/images/another/photo_2_2026-03-01_02-14-40.jpg',
-  '/images/another/photo_3_2026-03-01_02-14-40.jpg',
-  '/images/another/photo_4_2026-03-01_02-14-40.jpg',
+  '/images/another/photo_17_2026-03-01_02-14-40.jpg',
   '/images/another/photo_5_2026-03-01_02-14-40.jpg',
+  '/images/another/photo_7_2026-03-01_02-14-40.jpg',
+  '/images/another/photo_11_2026-03-01_02-14-40.jpg',
 ];
 
 export default function Hero() {
