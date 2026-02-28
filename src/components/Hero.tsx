@@ -6,11 +6,11 @@ import { motion, AnimatePresence } from 'motion/react';
 import { ArrowRight, Play, Sun, Heart, ShieldCheck, Star } from 'lucide-react';
 
 const sliderImages = [
-  '/images/new/Gemini_Generated_Image_13t2xf13t2xf13t2.png',
-  '/images/new/Gemini_Generated_Image_21x0sn21x0sn21x0.png',
-  '/images/slider/3506b2579b09ebc08a5728b8b3038fd9-cc_ft_768.webp',
-  '/images/slider/402fcbdd4ae6c6e0d64238aacefff69b-cc_ft_768.webp',
-  '/images/slider/5e95dc08f5039b7ae28f2725e206c54b-cc_ft_768.webp',
+  '/images/another/photo_16_2026-03-01_02-14-40.jpg',
+  '/images/another/photo_2_2026-03-01_02-14-40.jpg',
+  '/images/another/photo_3_2026-03-01_02-14-40.jpg',
+  '/images/another/photo_4_2026-03-01_02-14-40.jpg',
+  '/images/another/photo_5_2026-03-01_02-14-40.jpg',
 ];
 
 export default function Hero() {
@@ -19,21 +19,21 @@ export default function Hero() {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % sliderImages.length);
-    }, 6000);
+    }, 5000);
     return () => clearInterval(timer);
   }, []);
 
   return (
     <section id="hero" className="relative h-screen min-h-[850px] w-full overflow-hidden flex items-center justify-center bg-[#1B365D]">
       {/* Background Slider */}
-      <div className="absolute inset-0 z-0">
-        <AnimatePresence mode="popLayout">
+      <div className="absolute inset-0 z-0 bg-black">
+        <AnimatePresence initial={false}>
           <motion.div
             key={currentSlide}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 1.5, ease: "easeInOut" }}
+            exit={{ opacity: 1 }}
+            transition={{ duration: 2, ease: "easeInOut" }}
             className="absolute inset-0 w-full h-full"
           >
             <div className="relative w-full h-full"> 
@@ -43,12 +43,13 @@ export default function Hero() {
                  animate={{ scale: 1.04 }}
                  transition={{ duration: 6, ease: "linear" }}
                >
-                 <Image
+                   <Image
                    src={sliderImages[currentSlide]}
                    alt="Luxury Senior Living Background"
                    fill
                    priority={true}
-                   className="object-cover brightness-105 contrast-110 saturate-[1.1]"
+                   quality={100}
+                   className="object-cover"
                    sizes="100vw"
                  />
                </motion.div>
@@ -61,7 +62,7 @@ export default function Hero() {
         <div className="absolute inset-0 bg-radial-gradient from-transparent via-black/20 to-black/60 z-10" />
 
         {/* 2. Bottom Fade to Content */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-[#1B365D]/90 z-10" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-[#1B365D]/90 z-10" />
 
         {/* 3. Subtle Blue Glow */}
         <div className="absolute -top-[10%] -left-[10%] w-[60%] h-[60%] bg-[#7DD3FC]/15 rounded-full blur-[140px] z-[11]" />

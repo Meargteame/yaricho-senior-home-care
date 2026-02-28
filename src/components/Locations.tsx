@@ -12,9 +12,9 @@ const locations = [
     features: ['Manicured Gardens', 'Private Luxury Suites', 'Serene Neighborhood'],
     description: "A sanctuary of clinical excellence and residential grace, offering a personalized experience in the heart of Plano.",
     images: [
-      '/images/new/Gemini_Generated_Image_mc6vo2mc6vo2mc6v.png',
-      '/images/slider/b80d4f7a618f5384865a2a8785555c8b-cc_ft_384.webp',
-      '/images/slider/cead591f2af85cbe816555d2a6c6fbc4-cc_ft_384.webp',
+      '/images/another/photo_11_2026-03-01_02-14-40.jpg',
+      '/images/another/photo_12_2026-03-01_02-14-40.jpg',
+      '/images/another/photo_13_2026-03-01_02-14-40.jpg',
     ]
   }
 ];

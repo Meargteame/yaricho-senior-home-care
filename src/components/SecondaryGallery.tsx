@@ -1,45 +1,20 @@
 'use client';
 
-import { useState, useEffect } from 'react';
-import Image from 'next/image';
+import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import Image from 'next/image';
 
 const images = [
-    '/images/another/photo_6_2026-03-01_02-14-40.jpg',
-    '/images/another/photo_7_2026-03-01_02-14-40.jpg',
-    '/images/another/photo_8_2026-03-01_02-14-40.jpg',
-    '/images/another/photo_9_2026-03-01_02-14-40.jpg',
-    '/images/another/photo_10_2026-03-01_02-14-40.jpg',
+    '/images/another/photo_14_2026-03-01_02-14-40.jpg',
+    '/images/another/photo_15_2026-03-01_02-14-40.jpg',
+    '/images/another/photo_16_2026-03-01_02-14-40.jpg',
+    '/images/another/photo_17_2026-03-01_02-14-40.jpg',
 ];
 
-export default function Gallery() {
+export default function SecondaryGallery() {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [direction, setDirection] = useState(0);
-
-    const slideVariants = {
-        enter: (direction: number) => ({
-            x: direction > 0 ? 1000 : -1000,
-            opacity: 0
-        }),
-        center: {
-            zIndex: 1,
-            x: 0,
-            opacity: 1
-        },
-        exit: (direction: number) => ({
-            zIndex: 0,
-            x: direction < 0 ? 1000 : -1000,
-            opacity: 0
-        })
-    };
-
-    useEffect(() => {
-        const timer = setInterval(() => {
-            nextStep();
-        }, 5000);
-        return () => clearInterval(timer);
-    }, [currentIndex]);
 
     const nextStep = () => {
         setDirection(1);
@@ -51,18 +26,39 @@ export default function Gallery() {
         setCurrentIndex((prev) => (prev - 1 + images.length) % images.length);
     };
 
+    const variants = {
+        enter: (direction: number) => ({
+            x: direction > 0 ? 1000 : -1000,
+            opacity: 0,
+            scale: 0.8
+        }),
+        center: {
+            zIndex: 1,
+            x: 0,
+            opacity: 1,
+            scale: 1
+        },
+        exit: (direction: number) => ({
+            zIndex: 0,
+            x: direction < 0 ? 1000 : -1000,
+            opacity: 0,
+            scale: 0.8
+        })
+    };
+
     return (
-        <section id="gallery" className="py-24 bg-[#F8FAFC]">
-            <div className="max-w-7xl mx-auto px-6 mb-12 text-center">
-                <motion.span
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
+        <section className="py-24 bg-[#F0F9FF] overflow-hidden">
+            <div className="max-w-7xl mx-auto px-6 text-center mb-16">
+                <motion.span 
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
                     className="text-[#0284C7] font-bold tracking-[0.3em] uppercase text-sm block mb-4"
                 >
-                    Visual Experience
+                    Excellence in Every Detail
                 </motion.span>
                 <h2 className="font-serif text-4xl md:text-6xl text-[#1B365D] font-bold">
-                    Experience <span className="italic font-normal text-[#0284C7]">Yaricho Senior Home Care</span>
+                    More of <span className="italic font-normal text-[#0284C7]">Yaricho Senior Home Care</span>
                 </h2>
             </div>
 
@@ -71,7 +67,7 @@ export default function Gallery() {
                     <motion.div
                         key={currentIndex}
                         custom={direction}
-                        variants={slideVariants}
+                        variants={variants}
                         initial="enter"
                         animate="center"
                         exit="exit"
@@ -83,7 +79,7 @@ export default function Gallery() {
                     >
                          <Image
                             src={images[currentIndex]}
-                            alt={`Yaricho Senior Home Care of Plano - luxury senior home care view ${currentIndex + 1}`}
+                            alt={`Yaricho Senior Home Care - view ${currentIndex + 1}`}
                             fill
                             className="object-cover"
                             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 1200px"
@@ -118,15 +114,12 @@ export default function Gallery() {
                                 setDirection(idx > currentIndex ? 1 : -1);
                                 setCurrentIndex(idx);
                             }}
-                            className={`h-2 rounded-full transition-all duration-700 ${idx === currentIndex ? 'bg-[#0284C7] w-12' : 'bg-white/40 w-3 hover:bg-white/60'
-                                }`}
+                            className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                                idx === currentIndex ? 'bg-white scale-125' : 'bg-white/50 hover:bg-white/80'
+                            }`}
                         />
                     ))}
                 </div>
-            </div>
-
-            <div className="max-w-7xl mx-auto px-6 mt-16 flex justify-center">
-                <div className="h-[1px] w-full max-w-md bg-gradient-to-r from-transparent via-[#0284C7]/30 to-transparent" />
             </div>
         </section>
     );
