@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 import { Menu, X, Phone } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
@@ -20,8 +21,15 @@ export default function Navbar() {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <a href="#" className="flex items-center gap-3 group">
-            <div className="w-12 h-12 bg-[#1B365D] rounded-full flex items-center justify-center text-white font-serif text-2xl font-bold group-hover:bg-[#0284C7] transition-all duration-500 shadow-inner">
-              Y
+             <div className="relative h-16 w-16 shrink-0 group-hover:scale-105 transition-transform duration-500">
+               <Image 
+                 src="/images/logo.jpg" 
+                 alt="Yaricho Senior Home Care Logo" 
+                 fill 
+                 priority
+                 className="object-contain"
+                 sizes="64px"
+               />
             </div>
             <div className="flex flex-col">
               <span className="font-serif text-2xl font-bold tracking-tight leading-none text-[#1B365D]">

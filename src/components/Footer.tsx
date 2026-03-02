@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { Phone, Mail, Instagram, Facebook, ArrowUp } from 'lucide-react';
 
 export default function Footer() {
@@ -98,14 +99,25 @@ export default function Footer() {
         <div className="bg-[#E5E5E5] pt-8 pb-12 text-[#1B365D]">
             <div className="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col md:flex-row justify-between items-center gap-12 md:gap-8">
             
-            {/* Left: Brand Placeholder */}
-            <div className="order-2 md:order-1 w-48 h-48 bg-white/50 border border-white flex items-center justify-center p-4 shadow-sm">
-                 <div className="text-center">
-                    <div className="w-12 h-12 bg-[#1B365D] rounded-full flex items-center justify-center text-white font-serif text-2xl font-bold mx-auto mb-2">
-                        Y
-                    </div>
-                    <span className="font-serif text-lg font-bold block text-[#1B365D]">Yaricho Senior <br/> Home Care</span>
-                 </div>
+            {/* Left: QR Code */}
+            <div className="order-2 md:order-1 flex flex-col items-center gap-4">
+                <div className="w-48 h-48 bg-white p-2 border border-[#1B365D]/10 shadow-lg relative rounded-xl overflow-hidden">
+                     <Image 
+                        src="/images/qr_code.jpg" 
+                        alt="Scan to Contact Yaricho Senior Home Care" 
+                        fill
+                        className="object-contain p-2"
+                        sizes="(max-width: 768px) 100vw, 192px"
+                     />
+                </div>
+                <div className="text-center space-y-1">
+                    <p className="text-sm font-bold uppercase tracking-widest text-[#1B365D]">
+                        Scan to Contact
+                    </p>
+                    <p className="text-xs text-[#0284C7] font-medium">
+                        Save Our Info Instantly
+                    </p>
+                </div>
             </div>
 
             {/* Center: Social Icons */}
