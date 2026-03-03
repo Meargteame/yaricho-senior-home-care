@@ -21,7 +21,7 @@ export default function Navbar() {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <a href="#" className="flex items-center gap-3 group">
-             <div className="relative h-16 w-16 shrink-0 group-hover:scale-105 transition-transform duration-500">
+             <div className="relative h-16 w-16 shrink-0 group-hover:scale-105 transition-transform duration-500 bg-white rounded-lg">
                <Image 
                  src="/images/logo.jpg" 
                  alt="Yaricho Senior Home Care Logo" 
@@ -32,7 +32,7 @@ export default function Navbar() {
                />
             </div>
             <div className="flex flex-col">
-              <span className="font-serif text-2xl font-bold tracking-tight leading-none text-[#1B365D]">
+              <span className="font-serif text-3xl font-bold tracking-tight leading-none text-[#1B365D]">
                 Yaricho Senior Home Care
               </span>
             </div>

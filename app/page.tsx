@@ -18,6 +18,9 @@ const Locations = dynamic(() => import('../src/components/Locations'), {
 const SecondaryGallery = dynamic(() => import('../src/components/SecondaryGallery'), {
     loading: () => <div className="h-[600px] bg-gray-100 animate-pulse" />
 });
+const UpdateGallery = dynamic(() => import('../src/components/UpdateGallery'), {
+    loading: () => <div className="h-[600px] bg-gray-100 animate-pulse" />
+});
 
 export default function Home() {
     return (
@@ -29,6 +32,7 @@ export default function Home() {
                 <Services />
                 <Gallery />
                 <SecondaryGallery />
+                <UpdateGallery />
                 <Locations />
             </main>
             <Footer />

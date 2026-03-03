@@ -12,9 +12,6 @@ const nextConfig = {
   compiler: {
     removeConsole: process.env.NODE_ENV === 'production', // Clean logs in prod
   },
-  experimental: {
-    optimizePackageImports: ['lucide-react', 'motion', 'framer-motion'], // Tree shake icons/animations
-  },
 };
 
 export default nextConfig;
