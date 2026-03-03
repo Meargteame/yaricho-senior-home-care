@@ -23,6 +23,7 @@ const UpdateGallery = dynamic(() => import('../src/components/UpdateGallery'), {
 });
 
 export default function Home() {
+    // Updated with new logo and gallery - March 2026
     return (
         <div className="font-sans antialiased text-gray-900 bg-[#F8FAFC] selection:bg-[#1B365D]/10 selection:text-[#1B365D]">
             <Navbar />
