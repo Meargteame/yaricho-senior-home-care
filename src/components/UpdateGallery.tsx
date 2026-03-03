@@ -5,12 +5,23 @@ import Image from 'next/image';
 import { motion } from 'motion/react';
 import { X } from 'lucide-react';
 
-// Images from the client's update folder
+// Images from the client's update folder + additional facility images
 const updateImages = [
   '/images/update/photo_2026-03-03_17-36-51.jpg',
   '/images/update/photo_2026-03-03_17-36-58.jpg',
   '/images/update/photo_2026-03-03_17-37-05.jpg',
   '/images/update/imggg.jpg',
+  // Additional beautiful spaces from other folders
+  '/images/img/photo_2026-02-28_02-14-39.jpg',
+  '/images/img/photo_2026-02-28_02-14-41.jpg',
+  '/images/img/photo_2026-02-28_02-14-42.jpg',
+  '/images/slider/402fcbdd4ae6c6e0d64238aacefff69b-cc_ft_768.webp',
+  '/images/slider/5e95dc08f5039b7ae28f2725e206c54b-cc_ft_768.webp',
+  '/images/slider/9551cb39d73de8a0aeb840052aec75e7-cc_ft_768.webp',
+  '/images/another/photo_1_2026-03-01_02-14-40.jpg',
+  '/images/another/photo_2_2026-03-01_02-14-40.jpg',
+  '/images/another/photo_3_2026-03-01_02-14-40.jpg',
+  '/images/another/photo_4_2026-03-01_02-14-40.jpg',
 ];
 
 export default function UpdateGallery() {
