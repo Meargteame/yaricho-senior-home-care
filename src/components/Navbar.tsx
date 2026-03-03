@@ -21,9 +21,9 @@ export default function Navbar() {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <a href="#" className="flex items-center gap-3 group">
-             <div className="relative h-16 w-16 shrink-0 group-hover:scale-105 transition-transform duration-500 bg-white rounded-lg">
+             <div className="relative h-16 w-16 shrink-0 group-hover:scale-105 transition-transform duration-500 bg-white rounded-lg p-1">
                <Image 
-                 src="/images/logo.jpg" 
+                 src="/images/new_logo.png" 
                  alt="Yaricho Senior Home Care Logo" 
                  fill 
                  priority

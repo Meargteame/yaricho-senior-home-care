@@ -5,23 +5,12 @@ import Image from 'next/image';
 import { motion } from 'motion/react';
 import { X } from 'lucide-react';
 
-// Add your images from public/images/update folder here
-// Currently using placeholder images - replace with your actual images
+// Images from the client's update folder
 const updateImages = [
-  '/images/img/photo_2026-02-28_02-14-39.jpg',
-  '/images/img/photo_2026-02-28_02-14-39 (2).jpg',
-  '/images/img/photo_2026-02-28_02-14-41.jpg',
-  '/images/img/photo_2026-02-28_02-14-41 (2).jpg',
-  '/images/img/photo_2026-02-28_02-14-41 (3).jpg',
-  '/images/img/photo_2026-02-28_02-14-42.jpg',
-  '/images/img/photo_2026-02-28_02-14-42 (2).jpg',
-  '/images/new/Gemini_Generated_Image_13t2xf13t2xf13t2.png',
-  '/images/new/Gemini_Generated_Image_21x0sn21x0sn21x0.png',
-  '/images/new/Gemini_Generated_Image_2th4fx2th4fx2th4.png',
-  '/images/new/Gemini_Generated_Image_5pawb25pawb25paw.png',
-  '/images/new/Gemini_Generated_Image_61171i61171i6117.png',
-  // When you add images to public/images/update/, replace these paths with:
-  // '/images/update/your-image-name.jpg',
+  '/images/update/photo_2026-03-03_17-36-51.jpg',
+  '/images/update/photo_2026-03-03_17-36-58.jpg',
+  '/images/update/photo_2026-03-03_17-37-05.jpg',
+  '/images/update/imggg.jpg',
 ];
 
 export default function UpdateGallery() {
