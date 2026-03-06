@@ -1,6 +1,5 @@
 'use client';
 
-import Image from 'next/image';
 import { Phone, Mail, Instagram, Facebook, ArrowUp } from 'lucide-react';
 
 export default function Footer() {
@@ -98,30 +97,9 @@ export default function Footer() {
         {/* Bottom Section - Grey */}
         <div className="bg-[#E5E5E5] pt-8 pb-12 text-[#1B365D]">
             <div className="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col md:flex-row justify-between items-center gap-12 md:gap-8">
-            
-            {/* Left: QR Code */}
-            <div className="order-2 md:order-1 flex flex-col items-center gap-4">
-                <div className="w-48 h-48 bg-white p-2 border border-[#1B365D]/10 shadow-lg relative rounded-xl overflow-hidden">
-                     <Image 
-                        src="/images/qr_code.jpg" 
-                        alt="Scan to Contact Yaricho Senior Home Care" 
-                        fill
-                        className="object-contain p-2"
-                        sizes="(max-width: 768px) 100vw, 192px"
-                     />
-                </div>
-                <div className="text-center space-y-1">
-                    <p className="text-sm font-bold uppercase tracking-widest text-[#1B365D]">
-                        Scan to Contact
-                    </p>
-                    <p className="text-xs text-[#0284C7] font-medium">
-                        Save Our Info Instantly
-                    </p>
-                </div>
-            </div>
 
             {/* Center: Social Icons */}
-            <div className="order-1 md:order-2 flex gap-12">
+            <div className="flex gap-12 mx-auto">
                  <a href="mailto:faithseniormom@gmail.com" className="text-[#0284C7] hover:scale-110 transition-transform">
                     <Mail size={32} strokeWidth={1.5} />
                  </a>
@@ -137,7 +115,7 @@ export default function Footer() {
             </div>
 
             {/* Right: Copyright */}
-            <div className="order-3 text-center md:text-right text-xs text-[#1B365D]/60 space-y-1">
+            <div className="text-center md:text-right text-xs text-[#1B365D]/60 space-y-1 md:ml-auto">
                 <p>All Rights Reserved | &copy; {new Date().getFullYear()} | Yaricho Senior Home Care</p>
                 <p>Excellence in Plano Senior Living</p>
                 <button onClick={scrollToTop} className="flex items-center gap-2 justify-center md:justify-end hover:text-[#0284C7] mt-4 ml-auto w-full md:w-auto">

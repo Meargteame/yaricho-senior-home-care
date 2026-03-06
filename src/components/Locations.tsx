@@ -130,10 +130,10 @@ export default function Locations() {
 
                 <div className="pt-6">
                   <a
-                    href="https://www.google.com/maps/search/?api=1&query=2108+Winona+Dr+Plano+TX+75074"
+                    href="https://saddlebrown-swallow-132624.hostingersite.com/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    aria-label="View Location on Google Maps"
+                    aria-label="View Availability"
                     className="group inline-flex items-center gap-3 bg-[#1B365D] hover:bg-[#0284C7] text-white px-8 py-4 rounded-full font-bold tracking-widest uppercase transition-all duration-500 shadow-xl"
                   >
                     View Availability

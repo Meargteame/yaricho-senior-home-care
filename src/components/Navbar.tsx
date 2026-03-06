@@ -51,7 +51,9 @@ export default function Navbar() {
               </a>
             ))}
             <a
-              href="#contact"
+              href="https://saddlebrown-swallow-132624.hostingersite.com/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-[#1B365D] hover:bg-[#0284C7] text-white px-8 py-3 rounded-full text-sm font-bold tracking-wider uppercase transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5 border border-white/10"
             >
               Consult Now
