@@ -1,12 +1,39 @@
 import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
+    const baseUrl = 'https://yarichoseniorhomecare.com';
+    const currentDate = new Date();
+
     return [
         {
-            url: 'https://yarichoseniorhomecare.com',
-            lastModified: new Date(),
+            url: baseUrl,
+            lastModified: currentDate,
+            changeFrequency: 'weekly',
+            priority: 1.0,
+        },
+        {
+            url: `${baseUrl}/#services`,
+            lastModified: currentDate,
             changeFrequency: 'monthly',
-            priority: 1,
+            priority: 0.9,
+        },
+        {
+            url: `${baseUrl}/#gallery`,
+            lastModified: currentDate,
+            changeFrequency: 'monthly',
+            priority: 0.8,
+        },
+        {
+            url: `${baseUrl}/#locations`,
+            lastModified: currentDate,
+            changeFrequency: 'monthly',
+            priority: 0.9,
+        },
+        {
+            url: `${baseUrl}/#contact`,
+            lastModified: currentDate,
+            changeFrequency: 'monthly',
+            priority: 0.9,
         },
     ];
 }
