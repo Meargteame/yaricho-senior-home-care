@@ -45,18 +45,33 @@ const services = [
 const careMoments = [
   {
     src: 'https://images.pexels.com/photos/6646975/pexels-photo-6646975.jpeg?auto=compress&cs=tinysrgb&w=1200',
-    title: 'Compassionate Daily Support',
+    title: 'Compassionate Assistance',
     alt: 'Caregiver offering compassionate support to an elderly resident'
   },
   {
-    src: 'https://images.pexels.com/photos/7551622/pexels-photo-7551622.jpeg?auto=compress&cs=tinysrgb&w=1200',
-    title: 'Comfort in Every Moment',
-    alt: 'Senior resident receiving attentive care in a comfortable setting'
+    src: 'https://images.pexels.com/photos/3791665/pexels-photo-3791665.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    title: 'Daily Engagement',
+    alt: 'Young woman helping elderly lady navigate a smartphone in a park'
   },
   {
     src: 'https://images.pexels.com/photos/7551674/pexels-photo-7551674.jpeg?auto=compress&cs=tinysrgb&w=1200',
-    title: 'Dignity-Centered Care',
-    alt: 'Care team supporting an elderly resident with dignity and warmth'
+    title: 'Comfort & Rest',
+    alt: 'Caregiver attending to a senior resident in bed'
+  },
+  {
+    src: 'https://images.pexels.com/photos/34540/old-lady-smile-beautiful-woman.jpg?auto=compress&cs=tinysrgb&w=1200',
+    title: 'Joyful Living',
+    alt: 'Heartwarming close-up of a smiling senior woman'
+  },
+  {
+    src: 'https://images.pexels.com/photos/5790820/pexels-photo-5790820.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    title: 'Health Monitoring',
+    alt: 'Senior receiving blood pressure check'
+  },
+  {
+    src: 'https://images.pexels.com/photos/7551622/pexels-photo-7551622.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    title: 'Physical Wellness',
+    alt: 'Caregiver helping an elderly man with exercises'
   }
 ];
 
@@ -94,7 +109,7 @@ export default function Services() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {careMoments.map((moment, index) => (
               <motion.div
                 key={moment.src}
