@@ -49,7 +49,7 @@ const careMoments = [
     alt: 'Caregiver offering compassionate support to an elderly resident'
   },
   {
-    src: '/images/care/unnamed-1.jpg',
+    src: '/images/care/new.jpg',
     title: 'Daily Engagement',
     alt: 'Caregiver engaging with senior resident'
   },
@@ -59,7 +59,7 @@ const careMoments = [
     alt: 'Medical caretaker assisting senior man'
   },
   {
-    src: '/images/care/istockphoto-1348093614-612x612.jpg',
+    src: '/images/care/neww.jpg',
     title: 'Joyful Living',
     alt: 'Heartwarming moment with a smiling senior'
   },
