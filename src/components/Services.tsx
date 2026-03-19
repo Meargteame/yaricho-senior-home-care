@@ -44,34 +44,34 @@ const services = [
 
 const careMoments = [
   {
-    src: 'https://images.pexels.com/photos/6646975/pexels-photo-6646975.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    src: '/images/care/unnamed.jpg',
     title: 'Compassionate Assistance',
     alt: 'Caregiver offering compassionate support to an elderly resident'
   },
   {
-    src: 'https://images.pexels.com/photos/3791665/pexels-photo-3791665.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    src: '/images/care/unnamed-1.jpg',
     title: 'Daily Engagement',
-    alt: 'Young woman helping elderly lady navigate a smartphone in a park'
+    alt: 'Caregiver engaging with senior resident'
   },
   {
-    src: 'https://images.pexels.com/photos/7551674/pexels-photo-7551674.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    src: '/images/care/woman-medical-caretaker-with-senior-man.jpg',
     title: 'Comfort & Rest',
-    alt: 'Caregiver attending to a senior resident in bed'
+    alt: 'Medical caretaker assisting senior man'
   },
   {
-    src: 'https://images.pexels.com/photos/34540/old-lady-smile-beautiful-woman.jpg?auto=compress&cs=tinysrgb&w=1200',
+    src: '/images/care/istockphoto-1348093614-612x612.jpg',
     title: 'Joyful Living',
-    alt: 'Heartwarming close-up of a smiling senior woman'
+    alt: 'Heartwarming moment with a smiling senior'
   },
   {
-    src: 'https://images.pexels.com/photos/5790820/pexels-photo-5790820.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    src: '/images/care/Carers-Week-Image.jpg',
     title: 'Health Monitoring',
-    alt: 'Senior receiving blood pressure check'
+    alt: 'Senior receiving professional care support'
   },
   {
-    src: 'https://images.pexels.com/photos/7551622/pexels-photo-7551622.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    src: '/images/care/22062874_m.jpg',
     title: 'Physical Wellness',
-    alt: 'Caregiver helping an elderly man with exercises'
+    alt: 'Caregiver helping an elderly individual stay active'
   }
 ];
 
