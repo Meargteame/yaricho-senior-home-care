@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { motion } from 'motion/react';
 import { Heart, Utensils, Calendar, ShieldCheck, Stethoscope, Clock, Sparkles, UserCheck, Home } from 'lucide-react';
 
@@ -41,6 +42,24 @@ const services = [
   }
 ];
 
+const careMoments = [
+  {
+    src: 'https://images.pexels.com/photos/6646975/pexels-photo-6646975.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    title: 'Compassionate Daily Support',
+    alt: 'Caregiver offering compassionate support to an elderly resident'
+  },
+  {
+    src: 'https://images.pexels.com/photos/7551622/pexels-photo-7551622.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    title: 'Comfort in Every Moment',
+    alt: 'Senior resident receiving attentive care in a comfortable setting'
+  },
+  {
+    src: 'https://images.pexels.com/photos/7551674/pexels-photo-7551674.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    title: 'Dignity-Centered Care',
+    alt: 'Care team supporting an elderly resident with dignity and warmth'
+  }
+];
+
 export default function Services() {
   return (
     <section id="services" className="py-32 bg-[#F8FAFC]">
@@ -63,6 +82,44 @@ export default function Services() {
           <p className="text-gray-600 text-lg max-w-md leading-relaxed">
             We redefine the standard of senior living with a focus on dignity, personalization, and the highest medical standards in a serene environment.
           </p>
+        </div>
+
+        <div className="mb-16">
+          <div className="mb-8">
+            <h3 className="font-serif text-3xl md:text-4xl text-[#1B365D] font-bold leading-tight">
+              Care in <span className="italic font-normal text-[#0284C7]">Action</span>
+            </h3>
+            <p className="text-gray-600 text-base md:text-lg mt-3 max-w-2xl">
+              Moments of personalized support that reflect how we care for every resident with patience, dignity, and heart.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {careMoments.map((moment, index) => (
+              <motion.div
+                key={moment.src}
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.7, delay: index * 0.12, ease: [0.16, 1, 0.3, 1] }}
+                viewport={{ once: true, margin: '-50px' }}
+                className="group relative aspect-[4/3] overflow-hidden rounded-[2rem] shadow-[0_20px_50px_rgba(0,0,0,0.06)]"
+              >
+                <Image
+                  src={moment.src}
+                  alt={moment.alt}
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-700"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#1B365D]/70 via-[#1B365D]/20 to-transparent" />
+                <div className="absolute inset-x-0 bottom-0 p-6">
+                  <p className="text-white font-semibold text-xl leading-tight">
+                    {moment.title}
+                  </p>
+                </div>
+              </motion.div>
+            ))}
+          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
