@@ -7,7 +7,6 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const images = [
     '/images/another/photo_6_2026-03-01_02-14-40.jpg',
-    '/images/another/photo_7_2026-03-01_02-14-40.jpg',
     '/images/another/photo_8_2026-03-01_02-14-40.jpg',
     '/images/another/photo_9_2026-03-01_02-14-40.jpg',
     '/images/another/photo_10_2026-03-01_02-14-40.jpg',

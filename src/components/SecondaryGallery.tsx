@@ -8,8 +8,6 @@ import Image from 'next/image';
 const images = [
     '/images/another/photo_14_2026-03-01_02-14-40.jpg',
     '/images/another/photo_15_2026-03-01_02-14-40.jpg',
-    '/images/another/photo_16_2026-03-01_02-14-40.jpg',
-    '/images/another/photo_17_2026-03-01_02-14-40.jpg',
 ];
 
 export default function SecondaryGallery() {
