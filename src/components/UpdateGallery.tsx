@@ -11,10 +11,10 @@ const updateImages = [
   '/images/img/photo_2026-02-28_02-14-39.jpg',
   '/images/slider/5e95dc08f5039b7ae28f2725e206c54b-cc_ft_768.webp',
   '/images/slider/9551cb39d73de8a0aeb840052aec75e7-cc_ft_768.webp',
-  '/images/another/photo_1_2026-03-01_02-14-40.jpg',
+  '/images/another/photo_8_2026-03-01_02-14-40.jpg',
   '/images/another/photo_2_2026-03-01_02-14-40.jpg',
   '/images/another/photo_3_2026-03-01_02-14-40.jpg',
-  '/images/another/photo_4_2026-03-01_02-14-40.jpg',
+  '/images/care/Gemini_Generated_Image_ggyp2gggyp2gggyp.webp',
 ];
 
 export default function UpdateGallery() {
